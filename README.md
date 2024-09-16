@@ -17,7 +17,7 @@ def create_cnn_model(input_shape):
         
         layers.Flatten(),
         layers.Dense(512, activation='relu'),
-        layers.Dense(3, activation='softmax')  # Assuming 3 classes: correct, incorrect deadlift, incorrect bench press
+        layers.Dense(6, activation='softmax')  # Assuming 3 classes: correct, incorrect deadlift, incorrect bench press
     ])
     
     model.compile(optimizer='adam',
